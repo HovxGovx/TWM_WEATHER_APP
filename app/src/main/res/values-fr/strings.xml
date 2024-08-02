@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Prévisions météorologiques</string>
-    <string name="humidity">HUMIDITÉ</string>
-    <string name="wind">VENT</string>
-    <string name="pressure">PRESSION</string>
-    <string name="day">JOURNÉE</string>
-    <string name="enter_city_name">ENTRER LE NOM DE LA VILLE</string>
-    <string name="updated_at">MISE À JOUR À</string>
+    <string name="humidity">Humidité</string>
+    <string name="wind">vent</string>
+    <string name="pressure">Pression</string>
+    <string name="day">.</string>
+    <string name="enter_city_name">Ville</string>
+    <string name="updated_at">Mise a jour a</string>
     <string name="monday">Lundi</string>
     <string name="tuesday">Mardi</string>
     <string name="wednesday">Mercredi</string>

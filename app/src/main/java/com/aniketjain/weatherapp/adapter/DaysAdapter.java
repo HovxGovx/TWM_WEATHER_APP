@@ -73,7 +73,6 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.DayViewHolder>
                 max = String.format("%.0f", response.getJSONArray("daily").getJSONObject(i).getJSONObject("temp").getDouble("max") - 273.15);
                 pressure = response.getJSONArray("daily").getJSONObject(i).getString("pressure");
                 wind_speed = response.getJSONArray("daily").getJSONObject(i).getString("wind_speed");
-                humidity = response.getJSONArray("daily").getJSONObject(i).getString("humidity");
 
                 updateUI(holder);
                 hideProgressBar(holder);
@@ -93,7 +92,6 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.DayViewHolder>
         holder.temp_max.setText(max + "°C");
         holder.pressure.setText(pressure + " mb");
         holder.wind.setText(wind_speed + " km/h");
-        holder.humidity.setText(humidity + "%");
         holder.icon.setImageResource(
                 context.getResources().getIdentifier(
                         UpdateUI.getIconID(condition, update_time, sunrise, sunset),
@@ -122,7 +120,6 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.DayViewHolder>
             temp_max = itemView.findViewById(R.id.day_max_temp);
             pressure = itemView.findViewById(R.id.day_pressure);
             wind = itemView.findViewById(R.id.day_wind);
-            humidity = itemView.findViewById(R.id.day_humidity);
             icon = itemView.findViewById(R.id.day_icon);
         }
     }
